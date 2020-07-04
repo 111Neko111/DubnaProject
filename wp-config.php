@@ -1,90 +1,90 @@
 <?php
 /**
- * The base configuration for WordPress
+ * Основные параметры WordPress.
  *
- * The wp-config.php creation script uses this file during the
- * installation. You don't have to use the web site, you can
- * copy this file to "wp-config.php" and fill in the values.
+ * Скрипт для создания wp-config.php использует этот файл в процессе
+ * установки. Необязательно использовать веб-интерфейс, можно
+ * скопировать файл в "wp-config.php" и заполнить значения вручную.
  *
- * This file contains the following configurations:
+ * Этот файл содержит следующие параметры:
  *
- * * MySQL settings
- * * Secret keys
- * * Database table prefix
+ * * Настройки MySQL
+ * * Секретные ключи
+ * * Префикс таблиц базы данных
  * * ABSPATH
  *
- * @link https://wordpress.org/support/article/editing-wp-config-php/
+ * @link https://codex.wordpress.org/Editing_wp-config.php
  *
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define( 'DB_NAME', 'mysql' );
+// ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
+/** Имя базы данных для WordPress */
+define( 'DB_NAME', 'unfktru' );
 
-/** MySQL database username */
-define( 'DB_USER', 'root' );
+/** Имя пользователя MySQL */
+define( 'DB_USER', 'unfktru' );
 
-/** MySQL database password */
-define( 'DB_PASSWORD', '' );
+/** Пароль к базе данных MySQL */
+define( 'DB_PASSWORD', 'vgEmA4nE0JEP0hEX' );
 
-/** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+/** Имя сервера MySQL */
+define( 'DB_HOST', 'servers.ki-corporation.ru' );
 
-/** Database Charset to use in creating database tables. */
+/** Кодировка базы данных для создания таблиц. */
 define( 'DB_CHARSET', 'utf8mb4' );
 
-/** The Database Collate type. Don't change this if in doubt. */
+/** Схема сопоставления. Не меняйте, если не уверены. */
 define( 'DB_COLLATE', '' );
 
 /**#@+
- * Authentication Unique Keys and Salts.
+ * Уникальные ключи и соли для аутентификации.
  *
- * Change these to different unique phrases!
- * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
- * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
+ * Смените значение каждой константы на уникальную фразу.
+ * Можно сгенерировать их с помощью {@link https://api.wordpress.org/secret-key/1.1/salt/ сервиса ключей на WordPress.org}
+ * Можно изменить их, чтобы сделать существующие файлы cookies недействительными. Пользователям потребуется авторизоваться снова.
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'njCF7_+Hexp-G[pB#us%QU{6[B69?U&NgxZ~4$,E&;G~,3dW=kY{;_+ -Rt3>@c#' );
-define( 'SECURE_AUTH_KEY',  'BBSXq7J3Cw=rD$9)>TB4TFpnLB;Fc[ O>9pkz<9!cypI|A=0SW#~&=5vub$I1#8x' );
-define( 'LOGGED_IN_KEY',    ';Li+n1xyt6L.;qFc0`W/A!&op.D<$/,|@sG3^/1A*e3qp55Y^V%+FnFouY,*|[2<' );
-define( 'NONCE_KEY',        'pdpSG!4Ks+_eb ]8hM=8%dx|ZnPZ(bc(5n5v^Dt|JW=N2Y;^Pn4uu1eW01~xm5@P' );
-define( 'AUTH_SALT',        '^`cf>:q(G8gz_]0UDqR:`&%$Z@-1(VCLQ6,YYP`dvu6OO_7L7VV.7k<3DYLJf>Eh' );
-define( 'SECURE_AUTH_SALT', '&jG9d#[CF!BihyY=t$vmiC*3`B:+>}uycKzpJA-v(+,~Y;XiWG($ekvJj0]8[&9k' );
-define( 'LOGGED_IN_SALT',   'mh[S%0Dk{$D2?eJ]~RF,[/N&9 I7+pNKDILRV!;-{)CDB#+NYdYYPcP5A~[r0hG_' );
-define( 'NONCE_SALT',       'pt9q]jhAPwhL~@KqGz(|}!_|Or^}`W)0t?LMAd]-^b}<G%6cP@ej=dIK&SOxOKB]' );
+define( 'AUTH_KEY',         '&.eTO(ML*E|xgY[X;}#|G?PYIaJ/W:F4~,Vok(C{>oi&2vWsZG2QPC=O3`RxfJr[' );
+define( 'SECURE_AUTH_KEY',  'iqMic|l9EgMlrP*)FwkuM??(A}PG>#4mnr[!p[C!;L=</vzH6h:(WM-5Pf!3D:E@' );
+define( 'LOGGED_IN_KEY',    'KCCW_t#5mqyrOGe7i?oCf|)o=1qN>!==n:Sj3{FEu[]=&KW%hn_`j~O!kZOK2C3e' );
+define( 'NONCE_KEY',        '3P#^c8/sl e/F/+><j5E^5oqDN/)1Ho%H>Ml.@U7!rF!B_]^.Yl>!sWj{e__<(@i' );
+define( 'AUTH_SALT',        'ZWHgMZG@JEtt_rmZX~J;3NAE6|FUPB&Fpyt_[1[bcl0%hHxThk9Ewd8viW%ws3`j' );
+define( 'SECURE_AUTH_SALT', '~^Zg08:g38x:T9XaUT#3M?]gJk5ZUb~0M1r2^uN{64w}!3DG5Ef+|:j{`K[w42mw' );
+define( 'LOGGED_IN_SALT',   'WQtHGgYyWKZ_]YvA39SEe*6zn[Et4#q:8Lm}Bp;Cb(w-CX0t{kR~4s`NICA#tj{R' );
+define( 'NONCE_SALT',       'H% %3DY-s6F00mH-W4J_:8V;&(7^{T]DT+<?EtfG,R*H#oob}vO{xG|V%#cE%jZQ' );
 
 /**#@-*/
 
 /**
- * WordPress Database Table prefix.
+ * Префикс таблиц в базе данных WordPress.
  *
- * You can have multiple installations in one database if you give each
- * a unique prefix. Only numbers, letters, and underscores please!
+ * Можно установить несколько сайтов в одну базу данных, если использовать
+ * разные префиксы. Пожалуйста, указывайте только цифры, буквы и знак подчеркивания.
  */
 $table_prefix = 'wp_';
 
 /**
- * For developers: WordPress debugging mode.
+ * Для разработчиков: Режим отладки WordPress.
  *
- * Change this to true to enable the display of notices during development.
- * It is strongly recommended that plugin and theme developers use WP_DEBUG
- * in their development environments.
+ * Измените это значение на true, чтобы включить отображение уведомлений при разработке.
+ * Разработчикам плагинов и тем настоятельно рекомендуется использовать WP_DEBUG
+ * в своём рабочем окружении.
  *
- * For information on other constants that can be used for debugging,
- * visit the documentation.
+ * Информацию о других отладочных константах можно найти в Кодексе.
  *
- * @link https://wordpress.org/support/article/debugging-in-wordpress/
+ * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define( 'WP_DEBUG', false );
+define( 'WP_DEBUG', true );
+define( 'FS_METHOD', 'direct');
 
-/* That's all, stop editing! Happy publishing. */
+/* Это всё, дальше не редактируем. Успехов! */
 
-/** Absolute path to the WordPress directory. */
+/** Абсолютный путь к директории WordPress. */
 if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', __DIR__ . '/' );
+	define( 'ABSPATH', dirname( __FILE__ ) . '/' );
 }
 
-/** Sets up WordPress vars and included files. */
-require_once ABSPATH . 'wp-settings.php';
+/** Инициализирует переменные WordPress и подключает файлы. */
+require_once( ABSPATH . 'wp-settings.php' );
